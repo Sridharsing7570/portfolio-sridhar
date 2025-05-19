@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import { useState } from "react";
 import { useEffect } from "react";
+import { WelcomeLoader } from "./components/WelcomeLoader";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("hero");
@@ -39,24 +40,26 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-slate-800">
-      <Navbar
-        isScrolled={isScrolled}
-        currentSection={currentSection}
-        isMobileMenuOpen={isMobileMenuOpen}
-        setIsMobileMenuOpen={setIsMobileMenuOpen}
-      />
+    <WelcomeLoader>
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-slate-800">
+        <Navbar
+          isScrolled={isScrolled}
+          currentSection={currentSection}
+          isMobileMenuOpen={isMobileMenuOpen}
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+        />
 
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+        </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </WelcomeLoader>
   );
 }
 
