@@ -24,11 +24,12 @@ const About = () => {
       "VS Code",
       "Postman",
       "Vercel/Netlify",
+      "AWS",
     ],
     "AI/Concepts": [
       "AI Integration",
       "NLP Basics (Conceptual)",
-      "API Consumption (e.g., OpenAI)",
+      "API Consumption (e.g., OpenAI, Gemini AI)",
     ],
   };
 
@@ -171,14 +172,17 @@ const About = () => {
                             {category}
                           </h4>
                           <div className="flex flex-wrap gap-2">
-                            {skillList.map((skill) => (
-                              <Badge
-                                key={skill}
-                                className="bg-white hover:bg-sky-100 text-sky-700 hover:text-sky-800 border border-sky-200 px-3 py-1 transition-all hover:scale-105"
-                              >
-                                {skill}
-                              </Badge>
-                            ))}
+                            {skillList.map((skill) => {
+                              console.log(skill);
+                              return (
+                                <div
+                                  key={skill}
+                                  className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                                >
+                                  {skill}
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       ))}
