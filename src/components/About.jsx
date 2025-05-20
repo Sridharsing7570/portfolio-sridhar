@@ -172,17 +172,14 @@ const About = () => {
                             {category}
                           </h4>
                           <div className="flex flex-wrap gap-2">
-                            {skillList.map((skill) => {
-                              console.log(skill);
-                              return (
-                                <div
-                                  key={skill}
-                                  className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
-                                >
-                                  {skill}
-                                </div>
-                              );
-                            })}
+                            {skillList.map((skill) => (
+                              <div
+                                key={skill}
+                                className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                              >
+                                {skill}
+                              </div>
+                            ))}
                           </div>
                         </div>
                       ))}

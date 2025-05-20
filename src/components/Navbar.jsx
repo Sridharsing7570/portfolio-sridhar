@@ -1,4 +1,4 @@
-import { Briefcase, Code, FileText, Menu, MessageSquare, User } from "lucide-react";
+import { Briefcase, ChevronRight, Code, FileText, Menu, MessageSquare, User, X } from "lucide-react";
 import { Button } from "./ui/button";
 
 // Navbar component with animations
