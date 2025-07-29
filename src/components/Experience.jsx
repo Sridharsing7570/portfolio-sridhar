@@ -14,9 +14,21 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: "Full Stack Developer",
+      company: "Shelfex",
+      period: "July 2025 - present",
+      location: "Onsite, Gurgaon, Haryana",
+      responsibilities: [
+        "Developing full-stack web applications using postgresSQL, Express.js, React.js, Node.js and Next.js",
+        "Collaborating with project teams to implement features based on client requirements",
+        "Participating in code reviews and implementing best practices for web development",
+        "Working with version control systems (Git) to maintain clean, functional codebases",
+      ],
+    },
+    {
       title: "MERN Stack Developer",
       company: "Daya Consultancy Services (DCS)",
-      period: "August 2024 – Present",
+      period: "August 2024 – July 2025",
       location: "Onsite, Bhubaneshwar, Odisha",
       responsibilities: [
         "Developing full-stack web applications using MongoDB, Express, React, and Node.js",
