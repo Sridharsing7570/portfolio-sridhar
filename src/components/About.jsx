@@ -14,10 +14,16 @@ const About = () => {
   const [activeTab, setActiveTab] = useState("about");
 
   const skills = {
-    Languages: ["JavaScript (ES6+)", "HTML5", "CSS3"],
-    Frontend: ["React", "Redux (Toolkit)", "Tailwind CSS", "Shadcn/ui"],
+    Languages: ["JavaScript (ES6+)", "Typescript", "HTML5", "CSS3"],
+    Frontend: [
+      "React",
+      "Redux (Toolkit)",
+      "Tailwind CSS",
+      "Shadcn/ui",
+      "Next.js",
+    ],
     Backend: ["Node.js", "Express.js"],
-    Databases: ["MongoDB (Mongoose)"],
+    Databases: ["MongoDB (Mongoose)", "PostgresSQL(Drizzle)"],
     "Tools & Platforms": [
       "Git",
       "GitHub",
@@ -123,19 +129,19 @@ const About = () => {
                     <p className="text-lg text-slate-700 leading-relaxed">
                       Hello! I'm a passionate{" "}
                       <span className="font-semibold text-sky-600">
-                        MERN Stack Developer
-                      </span>{" "}
-                      with over 1 year and 6 months of professional experience
+                        Full Stack Developer{" "}
+                      </span>
+                      with over 1 year and 8 months of professional experience
                       at{" "}
                       <span className="font-semibold text-sky-600">
-                        Daya Consultancy Services (DCS)
+                        ShelfEx
                       </span>
                       . I thrive on building efficient, scalable, and
                       user-friendly web applications from concept to deployment.
                     </p>
                     <div className="bg-sky-50 p-6 rounded-xl border-l-4 border-sky-500 my-8">
                       <p className="text-lg text-slate-700 leading-relaxed">
-                        At DCS, I've had the opportunity to contribute to a
+                        At ShelfEx, I've had the opportunity to contribute to a
                         variety of client projects, enhancing my skills in
                         full-stack development, API integration, and
                         collaborative teamwork. Beyond my professional work, I'm

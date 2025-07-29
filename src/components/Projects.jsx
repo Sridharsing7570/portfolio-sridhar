@@ -29,8 +29,8 @@ const Projects = () => {
         "OpenAI API",
         "Tailwind CSS",
       ],
-      githubLink: "https://github.com/yourusername/mock-interview-ai",
-      liveLink: "https://your-mock-interview-app.com",
+      githubLink: null,
+      liveLink: null,
       color: "bg-gradient-to-r from-blue-500 to-cyan-400",
       status: "In Development",
       completion: 65,
@@ -42,7 +42,7 @@ const Projects = () => {
         "An application that uses AI to analyze and create concise summaries of long-form video content with key points extraction.",
       image: "/api/placeholder/400/250",
       tags: ["React", "Redux", "Node.js", "Express.js", "AI APIs", "MongoDB"],
-      githubLink: "https://github.com/yourusername/video-summarizer",
+      githubLink: null,
       liveLink: null, // No live link yet
       color: "bg-gradient-to-r from-purple-500 to-pink-500",
       status: "Early Stage",
@@ -55,7 +55,7 @@ const Projects = () => {
         "A comprehensive admin dashboard for e-commerce businesses to manage products, orders, and gain insights through analytics.",
       image: "/api/placeholder/400/250",
       tags: ["React", "MongoDB", "Express.js", "Node.js", "Chart.js", "Redux"],
-      githubLink: "https://github.com/yourusername/ecommerce-dashboard",
+      githubLink: null,
       liveLink: null, // No live link yet
       color: "bg-gradient-to-r from-emerald-500 to-teal-400",
       status: "Planning Phase",
@@ -75,7 +75,9 @@ const Projects = () => {
           </h2>
           <div className="h-1 w-24 bg-indigo-500 mx-auto mb-8 rounded-full"></div>
           <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-            Here are some of my current projects in development. I'm actively working on these to showcase my skills in web development and AI integration.
+            Here are some of my current projects in development. I'm actively
+            working on these to showcase my skills in web development and AI
+            integration.
           </p>
         </div>
 
@@ -123,7 +125,7 @@ const Projects = () => {
               <CardContent className="flex-grow pb-4">
                 {/* Progress bar */}
                 <div className="w-full bg-slate-200 rounded-full h-2.5 mb-4">
-                  <div 
+                  <div
                     className={`h-2.5 rounded-full ${project.color}`}
                     style={{ width: `${project.completion}%` }}
                   ></div>
@@ -131,7 +133,7 @@ const Projects = () => {
                 <p className="text-sm text-slate-500 mb-4">
                   {project.completion}% completed
                 </p>
-                
+
                 <div className="mb-4">
                   <div className="flex flex-wrap gap-2">
                     {project.tags.slice(0, 4).map((tag) => (

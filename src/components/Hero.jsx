@@ -61,7 +61,7 @@ const Hero = () => {
         {/* Role badge */}
         <div className="bg-white/80 backdrop-blur-md px-6 py-3 rounded-full mb-8 inline-block shadow-lg">
           <p className="text-xl md:text-2xl font-medium text-slate-800">
-            <span className="text-sky-600">MERN Stack Developer</span> |{" "}
+            <span className="text-sky-600">Full Stack Developer</span> |{" "}
             <span className="text-indigo-600">AI Solutions</span>
           </p>
         </div>
@@ -69,13 +69,10 @@ const Hero = () => {
         {/* Bio with better typography */}
         <p className="max-w-2xl mx-auto mb-10 text-lg text-slate-700 leading-relaxed font-medium backdrop-blur-sm bg-white/30 p-4 rounded-xl">
           Passionate developer with{" "}
-          <span className="font-semibold text-indigo-600">1.5 years</span> of
+          <span className="font-semibold text-indigo-600">1.8 years</span> of
           experience at
-          <span className="font-semibold text-sky-600">
-            {" "}
-            Daya Consultancy Services
-          </span>
-          , specializing in full-stack web applications and exploring the
+          <span className="font-semibold text-sky-600"> ShelfEx</span>,
+          specializing in full-stack web applications and exploring the
           cutting-edge potential of artificial intelligence.
         </p>
 

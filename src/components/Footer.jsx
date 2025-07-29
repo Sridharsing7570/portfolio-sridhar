@@ -15,7 +15,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold text-white">Sridhar Sing</span>
             </div>
-            <p className="text-slate-400 mt-2">MERN Stack Developer</p>
+            <p className="text-slate-400 mt-2">Full Stack Developer</p>
           </div>
 
           <div className="flex gap-6">
