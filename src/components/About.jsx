@@ -35,7 +35,7 @@ const About = () => {
     "AI/Concepts": [
       "AI Integration",
       "NLP Basics (Conceptual)",
-      "API Consumption (e.g., OpenAI, Gemini AI)",
+      "API Consumption (e.g., OpenAI, Gemini AI, Perplexity)",
     ],
   };
 
