@@ -1,12 +1,6 @@
 import { Badge, Briefcase, Calendar, MapPin } from "lucide-react";
 import { useState } from "react";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 // Experience section with enhanced styling and animations
 const Experience = () => {
@@ -14,20 +8,15 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Full Stack Developer",
+      title: "Full Stack Developer Intern",
       company: "Shelfex",
       period: "July 2025 - present",
       location: "Onsite, Gurgaon, Haryana",
-      responsibilities: [
-        "Developing full-stack web applications using postgresSQL, Express.js, React.js, Node.js and Next.js",
-        "Collaborating with project teams to implement features based on client requirements",
-        "Participating in code reviews and implementing best practices for web development",
-        "Working with version control systems (Git) to maintain clean, functional codebases",
-      ],
+      responsibilities: ["Developing full-stack web applications using postgresSQL, Express.js, React.js, Node.js and Next.js", "Collaborating with project teams to implement features based on client requirements", "Participating in code reviews and implementing best practices for web development", "Working with version control systems (Git) to maintain clean, functional codebases"],
     },
     {
       title: "MERN Stack Developer",
-      company: "Daya Consultancy Services (DCS)",
+      company: "Daya Consultancy Services(OPC) Pvt. Ltd.",
       period: "August 2024 – July 2025",
       location: "Onsite, Bhubaneshwar, Odisha",
       responsibilities: [
@@ -40,53 +29,42 @@ const Experience = () => {
       ],
     },
     {
-      title: "Junior Web Developer",
-      company: "Previous Experience",
+      title: "MERN Stack Developer Intern",
+      company: "Daya Consultancy Services(OPC) Pvt. Ltd.",
       period: "December 2023 to August 2024",
       location: "Onsite, Bhubaneshwar, Odisha",
+      responsibilities: ["Built foundational skills in HTML, CSS, and JavaScript", "Worked on small web projects to develop practical experience", "Completed training in React.js and Node.js development", "Collaborated on team projects to build portfolio work"],
+    },
+
+    {
+      title: "Internship",
+      company: "CSIR-IMMT",
+      period: "May 2023 - July 2023",
+      location: "Onsite, Bhubaneshwar, Odisha",
       responsibilities: [
-        "Built foundational skills in HTML, CSS, and JavaScript",
-        "Worked on small web projects to develop practical experience",
-        "Completed training in React.js and Node.js development",
-        "Collaborated on team projects to build portfolio work",
+        "Designed and developed an Admin Interface for a Smart Directory Application to manage and organize employee-related data.",
+        "Built features for adding, updating, and retrieving employee records, ensuring efficient data handling and easy accessibility.",
+        "Focused on user-friendly UI/UX and implemented secure data management practices.",
+        "Worked on full-stack development tasks, gaining hands-on experience with frontend, backend, and database integration.",
+        "Delivered a functional app that improved administrative efficiency in managing employee information.",
       ],
     },
   ];
 
   return (
-    <section
-      id="experience"
-      className="py-20 md:py-28 bg-gradient-to-br from-sky-50 to-blue-50"
-    >
+    <section id="experience" className="py-20 md:py-28 bg-gradient-to-br from-sky-50 to-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge
-            variant="outline"
-            className="mb-4 px-6 py-2 text-sky-600 border-sky-200 bg-white rounded-full text-sm font-medium shadow-sm transform transition-all hover:scale-105 hover:shadow-md"
-          >
+          <Badge variant="outline" className="mb-4 px-6 py-2 text-sky-600 border-sky-200 bg-white rounded-full text-sm font-medium shadow-sm transform transition-all hover:scale-105 hover:shadow-md">
             Experience
           </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-800 mb-3">
-            Professional Journey
-          </h2>
-          <p className="text-slate-500 max-w-2xl mx-auto">
-            Building exceptional digital experiences with modern web
-            technologies
-          </p>
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-800 mb-3">Professional Journey</h2>
+          <p className="text-slate-500 max-w-2xl mx-auto">Building exceptional digital experiences with modern web technologies</p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
-            <Card
-              key={index}
-              className={`shadow-lg border-none overflow-hidden transition-all duration-300 ${
-                hoveredIndex === index
-                  ? "transform -translate-y-1 shadow-xl"
-                  : ""
-              }`}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
+            <Card key={index} className={`shadow-lg border-none overflow-hidden transition-all duration-300 ${hoveredIndex === index ? "transform -translate-y-1 shadow-xl" : ""}`} onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-sky-400 to-blue-600"></div>
               <CardHeader className="bg-white border-b pb-6">
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
@@ -94,12 +72,8 @@ const Experience = () => {
                     <Briefcase className="h-8 w-8 text-sky-600" />
                   </div>
                   <div className="flex-1">
-                    <CardTitle className="text-2xl text-slate-800 mb-1">
-                      {exp.title}
-                    </CardTitle>
-                    <CardDescription className="text-md text-slate-600 font-medium">
-                      {exp.company}
-                    </CardDescription>
+                    <CardTitle className="text-2xl text-slate-800 mb-1">{exp.title}</CardTitle>
+                    <CardDescription className="text-md text-slate-600 font-medium">{exp.company}</CardDescription>
                     <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-3 text-sm text-slate-500">
                       <div className="flex items-center">
                         <Calendar className="h-4 w-4 mr-2 text-sky-500" />
