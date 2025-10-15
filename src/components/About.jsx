@@ -1,12 +1,4 @@
-import {
-  Badge,
-  Code,
-  Calendar,
-  Github,
-  Workflow,
-  Database,
-  Laptop,
-} from "lucide-react";
+import { Badge, Code, Calendar, Github, Workflow, Database, Laptop } from "lucide-react";
 import { useState } from "react";
 
 // About section with skills
@@ -15,28 +7,11 @@ const About = () => {
 
   const skills = {
     Languages: ["JavaScript (ES6+)", "Typescript", "HTML5", "CSS3"],
-    Frontend: [
-      "React",
-      "Redux (Toolkit)",
-      "Tailwind CSS",
-      "Shadcn/ui",
-      "Next.js",
-    ],
+    Frontend: ["React", "Redux (Toolkit)", "Tailwind CSS", "Shadcn/ui", "Next.js"],
     Backend: ["Node.js", "Express.js"],
     Databases: ["MongoDB (Mongoose)", "PostgresSQL(Drizzle)"],
-    "Tools & Platforms": [
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Postman",
-      "Vercel/Netlify",
-      "AWS",
-    ],
-    "AI/Concepts": [
-      "AI Integration",
-      "NLP Basics (Conceptual)",
-      "API Consumption (e.g., OpenAI, Gemini AI, Perplexity)",
-    ],
+    "Tools & Platforms": ["Git", "GitHub", "VS Code", "Postman", "Vercel/Netlify", "AWS", "Kafka", "Redis", "Docker", "Nginx", "Github Actions", "CI/CD"],
+    "AI/Concepts": ["AI Integration", "NLP Basics (Conceptual)", "API Consumption (e.g., OpenAI, Gemini AI, Perplexity)"],
   };
 
   const categoryIcons = {
@@ -49,18 +24,12 @@ const About = () => {
   };
 
   return (
-    <section
-      id="about"
-      className="py-20 md:py-28 relative bg-gradient-to-b from-white to-sky-50"
-    >
+    <section id="about" className="py-20 md:py-28 relative bg-gradient-to-b from-white to-sky-50">
       <div className="absolute top-0 left-0 w-full h-64 bg-sky-500 opacity-5 transform -skew-y-6"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <Badge
-              variant="outline"
-              className="mb-4 px-4 py-1 text-sky-500 border-sky-200 bg-sky-50 rounded-full text-sm font-medium animate-pulse"
-            >
+            <Badge variant="outline" className="mb-4 px-4 py-1 text-sky-500 border-sky-200 bg-sky-50 rounded-full text-sm font-medium animate-pulse">
               About Me
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold text-slate-800 mb-4">
@@ -84,10 +53,7 @@ const About = () => {
                     className="flex items-center cursor-pointer hover:bg-sky-700 p-3 rounded-lg transition-colors"
                     onClick={() => setActiveTab("about")}
                     style={{
-                      backgroundColor:
-                        activeTab === "about"
-                          ? "rgba(255,255,255,0.1)"
-                          : "transparent",
+                      backgroundColor: activeTab === "about" ? "rgba(255,255,255,0.1)" : "transparent",
                     }}
                   >
                     <div className="mr-3 bg-sky-500 p-2 rounded-lg">
@@ -99,10 +65,7 @@ const About = () => {
                     className="flex items-center cursor-pointer hover:bg-sky-700 p-3 rounded-lg transition-colors"
                     onClick={() => setActiveTab("skills")}
                     style={{
-                      backgroundColor:
-                        activeTab === "skills"
-                          ? "rgba(255,255,255,0.1)"
-                          : "transparent",
+                      backgroundColor: activeTab === "skills" ? "rgba(255,255,255,0.1)" : "transparent",
                     }}
                   >
                     <div className="mr-3 bg-sky-500 p-2 rounded-lg">
@@ -113,76 +76,38 @@ const About = () => {
                 </ul>
 
                 <div className="mt-12 pt-8 border-t border-sky-500">
-                  <p className="italic text-sky-100">
-                    "Building innovative web solutions with passion and
-                    precision"
-                  </p>
+                  <p className="italic text-sky-100">"Building innovative web solutions with passion and precision"</p>
                 </div>
               </div>
 
               <div className="w-full md:w-2/3 p-8">
                 {activeTab === "about" ? (
                   <div className="space-y-6 p-4">
-                    <h3 className="text-2xl font-bold text-slate-800 mb-6">
-                      Professional Background
-                    </h3>
+                    <h3 className="text-2xl font-bold text-slate-800 mb-6">Professional Background</h3>
                     <p className="text-lg text-slate-700 leading-relaxed">
-                      Hello! I'm a passionate{" "}
-                      <span className="font-semibold text-sky-600">
-                        Full Stack Developer{" "}
-                      </span>
-                      with over 1 year and 8 months of professional experience
-                      at{" "}
-                      <span className="font-semibold text-sky-600">
-                        ShelfEx
-                      </span>
-                      . I thrive on building efficient, scalable, and
-                      user-friendly web applications from concept to deployment.
+                      Hello! I'm a passionate <span className="font-semibold text-sky-600">Full Stack Developer </span>
+                      with over 1 year and 8 months of professional experience at <span className="font-semibold text-sky-600">ShelfEx</span>. I thrive on building efficient, scalable, and user-friendly web applications from concept to deployment.
                     </p>
                     <div className="bg-sky-50 p-6 rounded-xl border-l-4 border-sky-500 my-8">
                       <p className="text-lg text-slate-700 leading-relaxed">
-                        At ShelfEx, I've had the opportunity to contribute to a
-                        variety of client projects, enhancing my skills in
-                        full-stack development, API integration, and
-                        collaborative teamwork. Beyond my professional work, I'm
-                        deeply interested in the potential of{" "}
-                        <span className="font-semibold text-sky-600">
-                          Artificial Intelligence
-                        </span>
-                        .
+                        At ShelfEx, I've had the opportunity to contribute to a variety of client projects, enhancing my skills in full-stack development, API integration, and collaborative teamwork. Beyond my professional work, I'm deeply interested in the potential of <span className="font-semibold text-sky-600">Artificial Intelligence</span>.
                       </p>
                     </div>
-                    <p className="text-lg text-slate-700 leading-relaxed">
-                      I'm currently channeling this interest into personal
-                      projects like an AI-powered mock interview platform and a
-                      video summarization tool. I'm always eager to learn new
-                      technologies and take on challenging projects that push my
-                      abilities.
-                    </p>
+                    <p className="text-lg text-slate-700 leading-relaxed">I'm currently channeling this interest into personal projects like an AI-powered mock interview platform and a video summarization tool. I'm always eager to learn new technologies and take on challenging projects that push my abilities.</p>
                   </div>
                 ) : (
                   <div className="p-4">
-                    <h3 className="text-2xl font-bold text-slate-800 mb-8">
-                      Technical Expertise
-                    </h3>
+                    <h3 className="text-2xl font-bold text-slate-800 mb-8">Technical Expertise</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {Object.entries(skills).map(([category, skillList]) => (
-                        <div
-                          key={category}
-                          className="bg-slate-50 rounded-xl p-6 hover:shadow-md transition-shadow"
-                        >
+                        <div key={category} className="bg-slate-50 rounded-xl p-6 hover:shadow-md transition-shadow">
                           <h4 className="text-md font-medium mb-4 text-sky-600 flex items-center">
-                            <div className="bg-sky-100 p-2 rounded-lg text-sky-600 mr-3">
-                              {categoryIcons[category]}
-                            </div>
+                            <div className="bg-sky-100 p-2 rounded-lg text-sky-600 mr-3">{categoryIcons[category]}</div>
                             {category}
                           </h4>
                           <div className="flex flex-wrap gap-2">
                             {skillList.map((skill) => (
-                              <div
-                                key={skill}
-                                className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
-                              >
+                              <div key={skill} className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
                                 {skill}
                               </div>
                             ))}
