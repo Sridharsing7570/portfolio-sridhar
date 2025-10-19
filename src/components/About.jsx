@@ -45,7 +45,7 @@ const About = () => {
                   <div className="bg-white rounded-full p-3 mr-4">
                     <Code className="h-8 w-8 text-sky-600" />
                   </div>
-                  <h3 className="text-2xl font-bold">MERN Stack Developer</h3>
+                  <h3 className="text-2xl font-bold">Full Stack Developer</h3>
                 </div>
 
                 <ul className="space-y-4">
