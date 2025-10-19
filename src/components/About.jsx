@@ -85,15 +85,20 @@ const About = () => {
                   <div className="space-y-6 p-4">
                     <h3 className="text-2xl font-bold text-slate-800 mb-6">Professional Background</h3>
                     <p className="text-lg text-slate-700 leading-relaxed">
-                      Hello! I'm a passionate <span className="font-semibold text-sky-600">Full Stack Developer </span>
-                      with over 1 year and 8 months of professional experience at <span className="font-semibold text-sky-600">ShelfEx</span>. I thrive on building efficient, scalable, and user-friendly web applications from concept to deployment.
+                      Hello! I'm a passionate <span className="font-semibold text-sky-600">Full Stack Developer &nbsp;</span>
+                      with over <span className="font-semibold">2 years</span> of combined professional and internship experience. I have <span className="font-semibold">1 year</span> of professional experience at my previous company, along with <span className="font-semibold">8 months</span> of internship experience at the same place, and an additional <span className="font-semibold">4 months</span> of internship experience at
+                      <span className="font-semibold text-sky-600">&nbsp;CSIR</span>. Currently, I’m pursuing a <span className="font-semibold text-sky-600">Full Stack Internship at ShelfEx&nbsp;</span>
+                      since July 2025, where I continue to sharpen my skills in building scalable, efficient, and user-friendly web applications from concept to deployment.
                     </p>
+
                     <div className="bg-sky-50 p-6 rounded-xl border-l-4 border-sky-500 my-8">
                       <p className="text-lg text-slate-700 leading-relaxed">
                         At ShelfEx, I've had the opportunity to contribute to a variety of client projects, enhancing my skills in full-stack development, API integration, and collaborative teamwork. Beyond my professional work, I'm deeply interested in the potential of <span className="font-semibold text-sky-600">Artificial Intelligence</span>.
                       </p>
                     </div>
-                    <p className="text-lg text-slate-700 leading-relaxed">I'm currently channeling this interest into personal projects like an AI-powered mock interview platform and a video summarization tool. I'm always eager to learn new technologies and take on challenging projects that push my abilities.</p>
+                    <p className="text-lg text-slate-700 leading-relaxed">
+                      I'm currently channeling this passion into building a <span className="font-semibold text-sky-600">Knowledge App</span> powered by AI — designed to make learning more interactive and personalized. I’m always eager to explore emerging technologies and take on challenging projects that push my creativity and technical boundaries.
+                    </p>
                   </div>
                 ) : (
                   <div className="p-4">
